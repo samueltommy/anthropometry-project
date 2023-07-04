@@ -40,11 +40,6 @@ const LoginPage = () => {
         <br />
         <button type="submit">Login</button>
       </form>
-      <br />
-      <h3>Don't have account?</h3>
-      <form onSubmit={handleRegist}>
-        <button type="submit">Sign Up</button>
-      </form>
     </div>
   );
 };
