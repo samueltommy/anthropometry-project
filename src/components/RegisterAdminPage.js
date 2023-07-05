@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const RegisterPage = () => {
+const RegisterAdminPage = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [nama, setNama] = useState('');
@@ -10,7 +10,7 @@ const RegisterPage = () => {
 
   const handleRegister = (e) => {
     e.preventDefault();
-    navigate('/dashboard');
+    navigate('/dashboardadm');
   };
 
   return (
@@ -65,4 +65,4 @@ const RegisterPage = () => {
   );
   };
 
-  export default RegisterPage;
+  export default RegisterAdminPage;

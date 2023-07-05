@@ -6,8 +6,13 @@ const DashboardPuskesPage = () => {
 
   const handleRegister = (e) => {
     e.preventDefault();
-    navigate('/register');
+    navigate('/registerpuskesadm');
   };
+
+  const handleLogout = (e) => {
+    e.preventDefault();
+    navigate('/');
+  }
 
   return (
     <div>
@@ -17,6 +22,10 @@ const DashboardPuskesPage = () => {
       <br />
       <form onSubmit={handleRegister}>
         <button type="submit">Register</button>
+      </form>
+      <br />
+      <form onSubmit={handleLogout}>
+        <button type="submit">Log out</button>
       </form>
     </div>
   );

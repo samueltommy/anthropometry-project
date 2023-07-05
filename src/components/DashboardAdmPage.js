@@ -6,8 +6,18 @@ const DashboardAdmPage = () => {
 
   const handleRegister = (e) => {
     e.preventDefault();
-    navigate('/register');
+    navigate('/registeradmin');
   };
+
+  const handleRegPuskes = (e) => {
+    e.preventDefault();
+    navigate('/registerpuskes');
+  }
+
+  const handleLogout = (e) => {
+    e.preventDefault();
+    navigate('/');
+  }
 
   return (
     <div>
@@ -16,7 +26,17 @@ const DashboardAdmPage = () => {
       <p>This is a placeholder text to check if the dashboard page is working properly.</p>
       <br />
       <form onSubmit={handleRegister}>
+        <p>Register new user,</p>
         <button type="submit">Register</button>
+        <br />
+      </form>
+      <form onSubmit={handleRegPuskes}>
+        <p>Register new puskesmas,</p>
+        <button type="submit">Register</button>
+      </form>
+      <form onSubmit={handleLogout}>
+        <br />
+        <button type="submit">Log out</button>
       </form>
     </div>
   );

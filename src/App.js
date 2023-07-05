@@ -1,11 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import WelcomePage from './components/WelcomePage';
 import LoginPage from './components/LoginPage';
 import DashboardAdmPage from './components/DashboardAdmPage';
 import DashboardPuskesPage from './components/DashboardPuskesPage';
 import DashboardNakesPage from './components/DashboardNakesPage';
 import DashboardUserPage from './components/DashboardUserPage';
-import RegisterPage from './components/RegisterPage';
+import RegisterAdmPage from './components/RegisterAdminPage';
+import RegisterPuskesAdmPage from './components/RegisterPuskesAdmPage';
+import RegisterPuskesPage from './components/RegisterPuskesPage';
 
 const App = () => {
 
@@ -18,20 +21,11 @@ const App = () => {
         <Route path="/dashboardpkm" element={<DashboardPuskesPage />} />
         <Route path="/dashboardnakes" element={<DashboardNakesPage />} />
         <Route path="/dashboarduser" element={<DashboardUserPage />} />
-        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/registeradmin" element={<RegisterAdmPage />} />
+        <Route path="/registerpuskesadm" element={<RegisterPuskesAdmPage />} />
+        <Route path="/registerpuskes" element={<RegisterPuskesPage />} />
       </Routes>
     </Router>
-  );
-};
-
-const WelcomePage = () => {
-  return (
-    <div>
-      <h1>Welcome to Your App!</h1>
-      <p>Some introductory text or information about your application.</p>
-      <p>Please log in or register to access the dashboard.</p>
-      <a href="/login">Log In</a>
-    </div>
   );
 };
 
