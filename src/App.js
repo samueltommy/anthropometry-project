@@ -1,20 +1,24 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LoginPage from './components/LoginPage';
-import DashboardPage from './components/DashboardPage';
+import DashboardAdmPage from './components/DashboardAdmPage';
+import DashboardPuskesPage from './components/DashboardPuskesPage';
+import DashboardNakesPage from './components/DashboardNakesPage';
+import DashboardUserPage from './components/DashboardUserPage';
+import RegisterPage from './components/RegisterPage';
 
 const App = () => {
-  // Check if the user is authenticated (e.g., using a token or authentication state)
-  const isAuthenticated = true;
 
   return (
     <Router>
       <Routes>
         <Route path="/" element={<WelcomePage />} />
         <Route path="/login" element={<LoginPage />} />
-        {isAuthenticated ? (
-          <Route path="/dashboard" element={<DashboardPage />} />
-        ) : null}
+        <Route path="/dashboardadm" element={<DashboardAdmPage />} />
+        <Route path="/dashboardpkm" element={<DashboardPuskesPage />} />
+        <Route path="/dashboardnakes" element={<DashboardNakesPage />} />
+        <Route path="/dashboarduser" element={<DashboardUserPage />} />
+        <Route path="/register" element={<RegisterPage />} />
       </Routes>
     </Router>
   );

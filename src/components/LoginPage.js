@@ -8,13 +8,26 @@ const LoginPage = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    navigate('/dashboard');
+
+    // Perform authentication logic here
+    const users = [
+      { username: 'admin', password: 'admin', dashboard: '/dashboardadm' },
+      { username: 'adminpuskes', password: 'adminpuskes', dashboard: '/dashboardpkm' },
+      { username: 'nakes', password: 'nakes', dashboard: '/dashboardnakes' },
+      { username: 'natasha', password: 'natasha', dashboard: '/dashboarduser' },
+    ];
+
+    const authenticatedUser = users.find((user) => user.username === username && user.password === password);
+
+    if (authenticatedUser) {
+      // Authentication successful
+      navigate(authenticatedUser.dashboard);
+    } else {
+      // Authentication failed
+      alert('Invalid username or password');
+    }
   };
 
-  const handleRegist = (e) => {
-    e.preventDefault();
-    navigate('/register');
-  };
 
   return (
     <div>

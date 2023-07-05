@@ -10,7 +10,7 @@ const RegisterPage = () => {
 
   const handleRegister = (e) => {
     e.preventDefault();
-    navigate('/login');
+    navigate('/dashboard');
   };
 
   return (
@@ -46,11 +46,16 @@ const RegisterPage = () => {
             <br />
             <label>
                 Status:
-                <input
-                    type="text"
+                <select
                     value={statusjabatan}
                     onChange={(e) => setJabatan(e.target.value)}
-                />
+                >
+                    <option value="">Select status</option>
+                    <option value="Admin">Admin</option>
+                    <option value="Admin Puskesmas">Admin Puskesmas</option>
+                    <option value="Nakes">Nakes</option>
+                    <option value="Anak">Anak</option>
+                </select>
             </label>
             <br />
             <button type="submit">Register</button>
