@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import './WelcomePage.css'; // Import the CSS file for styling
 
 const WelcomePage = () => {
   const navigate = useNavigate();
@@ -10,11 +11,15 @@ const WelcomePage = () => {
   };
 
   return (
-    <div>
+    <div className="welcome-container">
+      <div className="welcome-content">
         <h1>Welcome to Your App!</h1>
         <p>Some introductory text or information about your application.</p>
         <p>Please log in or register to access the dashboard.</p>
-        <a href="/login">Log In</a>
+        <button className="login-button" onClick={handleWelcome}>
+          Log In
+        </button>
+      </div>
     </div>
   );
 };
