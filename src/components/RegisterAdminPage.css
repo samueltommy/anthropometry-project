@@ -1,49 +1,282 @@
-.register-container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f7f7f7;
-    border-radius: 5px;
-  }
-  
-  h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  input,
-  select {
-    width: 100%;
-    padding: 8px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  button {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    background-color: #3366cc;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #265499;
-  }
-  
-  button:disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
-  }
+.register-super-admin {
+  background-color: #d7d7d7;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
 
-  
+.register-super-admin .div-2 {
+  background-color: #d7d7d7;
+  border: 1px none;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  width: 1920px;
+}
+
+.register-super-admin .overlap {
+  border-radius: 10px;
+  height: 757px;
+  left: 111px;
+  position: absolute;
+  top: 89px;
+  width: 505px;
+}
+
+.register-super-admin .div-wrapper {
+  background-color: #ffffff;
+  border: 0.5px solid;
+  border-color: #868686;
+  border-radius: 10px;
+  box-shadow: 0px 4px 64px #0000000d;
+  height: 757px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 505px;
+}
+
+.register-super-admin .group-5 {
+  height: 626px;
+  left: 34px;
+  position: relative;
+  top: 62px;
+  width: 423px;
+}
+
+.register-super-admin .group-6 {
+  height: 72px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 413px;
+}
+
+.register-super-admin .text-wrapper {
+  color: #000000;
+  font-family: "Poppins-Medium", Helvetica;
+  font-size: 31px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+}
+
+.register-super-admin .p {
+  color: #000000;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 48px;
+  width: 409px;
+}
+
+.register-super-admin .overlap-group-wrapper {
+  height: 57px;
+  left: 43px;
+  position: absolute;
+  top: 500px;
+  width: 425px;
+}
+
+.register-super-admin .text-wrapper-2 {
+  color: #ffffff;
+  font-family: "Poppins-Medium", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  left: 186px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 17px;
+}
+
+.register-super-admin .register-form {
+  height: 329px;
+  left: 0;
+  position: absolute;
+  top: 168px;
+  width: 423px;
+}
+
+.register-super-admin .group-7 {
+  height: 32px;
+  left: 20px;
+  position: absolute;
+  top: 20px;
+  width: 292px;
+}
+
+.register-super-admin .stei-itb {
+  height: 32px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 140px;
+}
+
+.register-super-admin .logo-SITH-FC {
+  height: 32px;
+  left: 159px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 86px;
+}
+
+.register-super-admin .logo-kupu {
+  height: 32px;
+  left: 264px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 28px;
+}
+
+.register-super-admin .small-team {
+  align-items: center;
+  background-color: #ffffff;
+  display: flex;
+  gap: 10px;
+  height: 759px;
+  justify-content: center;
+  left: 616px;
+  mix-blend-mode: color-burn;
+  padding: 0px 88px;
+  position: absolute;
+  top: 70px;
+  width: 845px;
+}
+
+.register-super-admin .logo-puskesmas {
+  height: 632.92px;
+  min-width: 528.98px;
+  object-fit: cover;
+  position: relative;
+}
+
+.register-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
+.register-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.register-container label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.register-container input,
+.register-container select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.register-container button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #3366cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register-container button:hover {
+  background-color: #265499;
+}
+
+.register-container button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-form label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.register-form label .group-text {
+  margin-bottom: 5px;
+}
+
+.register-form input[type="password"],
+.register-form input[type="text"],
+.register-form input[type="number"],
+.register-form select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.register-form button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #33cc4c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.register-form button:hover {
+  background-color: #0a821a;
+}
+
+.register-super-admin .overlap-group {
+  display: flex;
+  align-items: center;
+}
+
+.register-super-admin .overlap-group2 {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.register-super-admin .invisible,
+.register-super-admin .invisible2 {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+
+.register-super-admin .invisible2 {
+  margin-left: 10px;
+}
+
+.register-super-admin .register-form button {
+  margin-top: 20px;
+}
